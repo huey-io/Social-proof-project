@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+
+/* Variables */
+
+:root {
+    --body: #f6f6f6;
+    --Dark-Magenta: hsl(300, 43%, 22%);
+    --Soft-Pink: hsl(333, 80%, 67%);
+
+    --Grayish-Magenta: hsl(303, 10%, 53%);
+    --Light-Magenta: hsl(300, 24%, 96%);
+    --White: hsl(0, 0%, 100%);
+    --grid-columns: 1;
+    --font-wrap: 'League Spartan', sans-serif;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'League Spartan', sans-serif;
+
+}
+
+
+section {
+    max-width: 1168px;
+    width: 100%;
+
+}
+
+.icon {
+    max-height: 10px;
+    max-width: 14px;
+    width: 50%;
+    height: 100%;
+}
+
+/* General Styling */
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1168px;
+    width: 100%;
+}
+
+.title-wrap {
+    display: flex;
+    margin: 0; 
+    padding: 10px 10px;
+}
+
+.title-text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.text-wrap {
+    max-width: 360px;
+    max-height: 360px;
+    width: 100%;
+    height: 100%;
+    font-family: var(--font-wrap);
+    font-size: 1.125rem;
+    padding-left: 15px; 
+}
+
+/* CARD */
+
+.card {
+    max-height: 320px;
+    height: 75%;
+    max-width: 320px;
+    width: 100%;
+    background: var(--Dark-Magenta);
+    /* gap: 20px; */
+    padding: 5px 5px;
+    flex-direction: column;
+
+}
+
+.card-wrap2 {
+    margin-top: 10px;
+}
+
+.card-wrap3 {
+    margin-top: 20px;
+}
+
+.img {
+/* position: absolute; */
+/* display: block; */
+/* padding: 0px 10px; */
+    /* padding-top: 25px; */
+    /* border-radius: 50%; */
+    /* display: inline; */
+    /* padding: 10px 10px; */
+    /* position: inherit; */
+}
+
+img {
+    /* position: absolute; */
+    /* padding-left: 15px;
+    padding-top: 15px; */
+    border-radius: 50%;
+/* float: left; */
+
+}
+
+.column {
+    display: flex;
+    gap: 18px;
+    padding: 25px 25px;
+}
+
+
+/* STARS */
+
+.stars {
+/* float: right; */
+padding-top: 70px;
+padding-left: 100px;
+margin-top: 45px;
+
+}
+
+.star-wrap {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+
+  
+}
+
+.star-text {
+   padding: 5px 0px;
+}
+
+.star-text1 {
+    margin-left: 20px;
+}
+
+.star-text2 {
+    margin-left: 40px;
+
+}
+
+.star-text3 {
+    margin-left: 60px;
+}
+
+.star-card {
+
+    max-width: 300px;
+    width: 100%;
+    max-height: 100px;
+    height: 100%;
+    background:var(--Light-Magenta);
+
+    display: flex;
+    gap: 1px;
+    white-space: nowrap;
+    border-radius: 5%;
+
+}
+
+
+
+h1 {
+    margin-top: 40px;
+    padding: 10px 10px;
+    font-family: var(--font-wrap);
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--Dark-Magenta);
+}
+
+.mini {
+    padding: 10px 0;
+    font-family: var(--font-wrap);
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--Dark-Magenta);
+}
+
+.ver {
+    color: var(--Soft-Pink);
+    padding-bottom: 10px;
+    padding-top: 5px;
+
+
+}
+
+.rating {
+    font-size: 1rem;
+    font-family: var(--font-wrap);
+
+    padding-top: 3pm;
+    width: 50%;
+    color: var(--Dark-Magenta);
+}
+
+span {
+display: inline;
+color: var(--Light-Magenta);
+
+
+}
+
+.name-wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.span-wrap {
+    display: flex;
+    flex-direction: column;
+display:inline;
+align-content: center;
+    text-align: center;
+    align-items: center;
+
+}
+
+.bio-text {
+    padding: 10px 10px;
+    color: var(--Light-Magenta);
+}
+
+footer {
+    display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+ /* 768px is a tablet */
+/* 1024px is a laptop */
+/* 1200px is a desktop */
+/* 1440px is a large desktop */
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+    :root {
+        --grid-columns: 1;  
+        grid-auto-flow: column;
+    /* }
+
+        text-align: left;
+        padding: 20px 20px 20px 20px; */
+    }
+.hero {
+
+flex-direction: column;
+/* grid-template-columns: auto; */
+}
+.star-wrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    section {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }  
+
+.column {
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-wrap {
+flex-direction: column;
+margin-top: 5px;
+padding: 0;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.stars {
+    margin: 0;
+    padding: 0;
+}
+
+.star-text {
+    margin-bottom: 10px;
+}
+
+.card {
+    margin: 0;
+    padding: 0;
+}
+
+.card-wrap {
+    margin: 0;
+    padding: 0;
+}
+
+.card-wrap2, .card-wrap3 {
+    margin: 0;
+    padding: 0;
+}
+footer {
+    padding-top: 5px;
+}
+
+}
+
+@media (max-width: 1024px) {
+    :root {
+        --grid-columns: 1;  
+        grid-auto-flow: column;
+    /* }
+
+        text-align: left;
+        padding: 20px 20px 20px 20px; */
+    }
+.hero {
+
+flex-direction: column;
+/* grid-template-columns: auto; */
+}
+.star-wrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    }
+
+    section {
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }  
+
+.column {
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title-wrap {
+flex-direction: column;
+margin-top: 5px;
+padding: 0;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+
+.stars {
+    margin: 0;
+    padding: 0;
+}
+
+.star-text {
+    margin-bottom: 10px;
+}
+
+.card {
+    margin: 0;
+    padding: 0;
+}
+
+.card-wrap {
+    margin: 0;
+    padding: 0;
+}
+
+.card-wrap2, .card-wrap3 {
+    margin: 0;
+    padding: 0;
+}
+footer {
+    padding-top: 5px;
+}
+
+}
